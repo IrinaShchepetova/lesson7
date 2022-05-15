@@ -8,6 +8,7 @@ public class Cat {
         this.hungry = hungry;
     }
     public void eat(Plate plate){
+        if (!hungry) return;
         if (plate.decreaseFood(appetite))
         hungry = true;
     }
